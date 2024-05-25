@@ -1,5 +1,6 @@
 from random import shuffle
 
+# Asking if you want to take a test or not
 '''
 while True:
     y_n = input("Do you want to take a test? Answer with yes or no.\n")
@@ -15,12 +16,15 @@ while True:
 '''
 
 word_list = {}
+
+# Splitting the line into word and translation
 with open("voc.txt", "r") as voc:
     for line in voc.readlines():
         word_list[line.split("=")[0].strip()] = line.split("=")[1].strip()
 
 maximum_words = len(word_list)
 
+# Asking for the amount of words to be tested on
 while True:
     try:
         amount = int(input(f"How many words do you want to be tested on? The maximum amount is {maximum_words}\n"))
@@ -42,6 +46,7 @@ while True:
     print("\nOkay, starting test\n")
     break
 
+# Making a list of keys, shuffling it, and truncating it to the amount
 key_list = list(word_list)
 shuffle(key_list)
 key_list = key_list[:amount]
@@ -49,6 +54,7 @@ key_list = key_list[:amount]
 score = 0
 mistakes = []
 
+# Testing and keeping track of mistakes
 for word in key_list:
     test = input(f"What is the translation of {word}?\n")
     if test == word_list[word]:
@@ -58,8 +64,10 @@ for word in key_list:
         print("Incorrect\n")
         mistakes.append([word, test, word_list[word]])
 
-print("\nHere are your mistakes:")
+# Printing mistakes
+print("Here are your mistakes:")
 for mistake in mistakes:
     print(f"{mistake[0]}: {mistake[1]} --> {mistake[2]}")
 
+# Calculating score
 print(f"\nYour score was {round(score/amount*100)}%.")
