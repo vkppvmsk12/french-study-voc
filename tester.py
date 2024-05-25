@@ -1,4 +1,4 @@
-import random
+from random import shuffle
 
 '''
 while True:
@@ -43,7 +43,7 @@ while True:
     break
 
 key_list = list(word_list)
-random.shuffle(key_list)
+shuffle(key_list)
 key_list = key_list[:amount]
 
 score = 0
