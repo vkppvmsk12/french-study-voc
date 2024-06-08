@@ -56,7 +56,7 @@ mistakes = []
 
 # Testing and keeping track of mistakes
 for word in key_list:
-    test = input(f"What is the translation of {word}?\n")
+    test = input(f"{word}\n")
     if test == word_list[word]:
         print("Correct\n")
         score += 1
