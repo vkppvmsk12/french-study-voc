@@ -55,8 +55,8 @@ score = 0
 mistakes = []
 
 # Testing and keeping track of mistakes
-for word in key_list:
-    test = input(f"{word}\n")
+for i, word in enumerate(key_list, start=1):
+    test = input(f"{i}. {word}\n")
     if test == word_list[word]:
         print("Correct\n")
         score += 1
