@@ -66,9 +66,10 @@ for i, word in enumerate(key_list, start=1):
         mistakes.append([word, test, word_list[word]])
 
 # Printing mistakes
-print("Here are your mistakes:")
-for mistake in mistakes:
-    print(f"{mistake[0]}: {mistake[1]} --> {mistake[2]}")
-
+if mistakes:
+    print("Here are your mistakes:")
+    for mistake in mistakes:
+        print(f"{mistake[0]}: {mistake[1]} --> {mistake[2]}")
+    print()
 # Calculating score
-print(f"\nYour score was {round(score/amount*100)}%.")
+print(f"Your score was {round(score/amount*100)}%.")
