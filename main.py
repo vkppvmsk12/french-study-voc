@@ -18,7 +18,7 @@ while True:
 word_list = {}
 
 # Splitting the line into word and translation
-with open("voc.txt", "r") as voc:
+with open("voc.txt", "r", encoding="utf-8") as voc:
     for line in voc.readlines():
         word_list[line.split("=")[0].strip()] = line.split("=")[1].strip()
 
