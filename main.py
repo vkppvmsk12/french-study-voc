@@ -1,20 +1,5 @@
 from random import shuffle
 
-# Asking if you want to take a test or not
-'''
-while True:
-    y_n = input("Do you want to take a test? Answer with yes or no.\n")
-    if y_n.lower() == "no":
-        print("\nOkay, exiting program")
-        exit()
-    
-    if y_n.lower() == "yes":
-        print("\nOkay, starting test.\n")
-        break
-
-    print("\nPlease answer with yes or no.\n")
-'''
-
 word_list = {}
 
 # Splitting the line into word and translation
