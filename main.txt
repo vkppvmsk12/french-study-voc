@@ -1,27 +1,5 @@
-het knutselen = le bricolage
-een nachtmerrie = un cauchemar
-een musical = une comédie musicale
-een dronesrace = une course de drones
-een motto = une devise
-het schaken = les échecs (m)
-het buitenland = l'étranger (m)
-een initiatie, kennismaking met = une initiation
-een rolschaats = un patin à roulettes
-het rolschaatsen = le patinage à roulettes
-het windsurfen = la planche à voile
-het diepzeeduiken = la plongée sous-marine
-het beeldhouwen = la sculpture
-een gevoel van vrijheid = une sensation de liberté
-de waterpolo = le water-polo 
-onbekend = inconnu
-lichamelijk, fysiek = physique
-vernieuwend = novateur, novatrice
-slechtste, ergste = pire 
-dromerig = rêveur, rêveuse
-bewegen = bouger
-creëren, bedenken, scheppen = créer
-groeien = grandir
-uitvinden = inventer
-iemand motiveren om = motiver quelqu'un à
-schaatsen = patiner
-vooruitgaan = progresser
+e = te
+
+f= gamer
+
+g = aankomen

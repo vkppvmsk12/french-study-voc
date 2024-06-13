@@ -20,7 +20,7 @@ word_list = {}
 # Splitting the line into word and translation
 with open("main.txt", "r", encoding="utf-8") as main:
     for line in main.readlines():
-        if len(line) > 1:
+        if line.strip():
             word_list[line.split("=")[0].strip()] = line.split("=")[1].strip()
 
 maximum_words = len(word_list)
